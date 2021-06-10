@@ -1,0 +1,8 @@
+// Chosse which breakpoint to use in a media query
+@mixin mq($point) {
+    $size: map-get($breakpoints, $point);
+
+    @media only screen and (min-width: $size) {
+        @content
+    }
+}

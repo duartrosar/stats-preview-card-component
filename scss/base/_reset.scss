@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.5pt;
+  }
+  
+  body {
+    background-color: $primary-dark;
+    line-height: 1;
+  }
+  
+  a {
+    text-decoration: none;
+  }

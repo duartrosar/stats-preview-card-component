@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: -0.5pt;
+}
+
+body {
+  background-color: #090b1a;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+}
+h1 .insights {
+  color: #aa5cdb;
+  font-size: inherit;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.p-main {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+.p-stats {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.p-main {
+  color: rgba(255, 255, 255, 0.75);
+}
+.p-stats {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+
+.card {
+  margin: 50px auto;
+  border: 1px solid #090b1a;
+  border-radius: 10px;
+  background-color: #1b1938;
+  width: 320px;
+  height: 800px;
+}
+.card .content .img-container {
+  position: relative;
+}
+.card .content .img-container .img {
+  background: url("../images/image-header-mobile.jpg") no-repeat center;
+  background-size: 335px 235px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 233px;
+  background-color: #774099;
+  background-blend-mode: overlay;
+}
+.card .content-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 20px 30px 20px;
+}
+.card .content-main .body {
+  margin-top: 20px;
+}
+.card .content-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card .content-stats .stat {
+  margin: 20px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #090b1a;
+}
+
+/*# sourceMappingURL=style.css.map */

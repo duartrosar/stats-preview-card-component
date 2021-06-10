@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as *;
+
+h1 {
+    font-size: 1.8rem;
+    color: $primary-white;
+    font-family: $primary-font;
+    line-height: 1.2;
+        .insights {
+            color: $primary-light;
+            font-size: inherit;
+        }
+}
+
+p {
+    font-family: $secondary-font;
+    font-size: 15px;
+}
+
+.p {
+    &-main {
+        color: $secondary-white;
+        line-height: 1.5;
+    }
+    &-stats {
+        color: $tertiary-white;
+    }
+}
+    
+
+    
+
+.p {
+ &-main {
+     color: $secondary-white;
+ }
+ &-stats {
+     color: $tertiary-white;
+     text-transform: uppercase;
+ }
+}
+
