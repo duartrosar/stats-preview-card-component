@@ -30,8 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/duartrosar/stats-preview-card-component)
-- Live Site URL: [Add live site URL here](https://epic-jones-285c87.netlify.app/)
+- Live Site URL: [With Netlify](https://epic-jones-285c87.netlify.app/)
 
 ## My process
 
