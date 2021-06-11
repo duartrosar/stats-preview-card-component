@@ -92,7 +92,7 @@ p {
 }
 
 .card {
-  margin: 5em auto 0 auto;
+  margin: 5em auto 0;
   border: 1px solid #090b1a;
   border-radius: 10px;
   background-color: #1b1938;
@@ -105,7 +105,7 @@ p {
 }
 @media only screen and (min-width: 1020px) {
   .card {
-    margin: 13em auto 0 auto;
+    margin: 13em auto 0;
   }
 }
 @media only screen and (min-width: 1224px) {
@@ -162,13 +162,13 @@ p {
 @media only screen and (min-width: 1224px) {
   .card .content-text .content-main {
     width: 80%;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 0;
   }
 }
 @media only screen and (min-width: 1440px) {
   .card .content-text .content-main {
     width: 80%;
-    margin: 50px auto 0 auto;
+    margin: 50px auto 0;
   }
 }
 @media only screen and (min-width: 1224px) {

@@ -2,7 +2,7 @@
 
 // The whole card
 .card {
-  margin: 5em auto 0 auto;
+  margin: 5em auto 0;
   border: 1px solid $primary-dark;
   border-radius: 10px;
   background-color: $secondary-dark;
@@ -11,7 +11,7 @@
     width: 75%;
   }
   @include mq("large") {
-    margin: 13em auto 0 auto;
+    margin: 13em auto 0;
   }
   // The container with the text and picture
   .content {
@@ -64,11 +64,11 @@
 
         @include mq("huge") {
           width: 80%;
-          margin: 40px auto 0 auto;
+          margin: 40px auto 0;
         }
         @include mq("full") {
           width: 80%;
-          margin: 50px auto 0 auto;
+          margin: 50px auto 0;
         }
         // Title
         .head {
