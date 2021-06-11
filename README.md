@@ -46,9 +46,9 @@ Users should be able to:
 
 ### What I learned
 
-This was my first <mobile-first> and "fully" responsive project. I tried not to use absolute units and not to repeat code. I also tried to divide my project into as many smaller sections as possible, it was little bit confusing at first navigating the project folders, but thanks to Sass and VSCode, I quickly got used to it. I struggled specially with sizing the image and "making it grow" with the layout, I'm still not very happy with how I achieved it.
+This was my first **mobile first** and "fully" responsive project. I tried not to use absolute units and not to repeat code. I also tried to divide my project into as many smaller sections as possible, it was little bit confusing at first navigating the project folders, but thanks to Sass and VSCode, I quickly got used to it. I struggled specially with sizing the image and "making it grow" with the layout, I'm still not very happy with how I achieved it.
 
-The only thing I'm really proud of is not using the <height> property, as this is something I've struggled with before, and, as I've mentioned before not using absolute units to size components.
+The only thing I'm really proud of is not using the **height** property, as this is something I've struggled with before, and, as I've mentioned before not using absolute units to size components.
 
 The following is something I'm NOT proud of. I could not figure out how to format the text like in the brief prictures, in order for it to have the same amount of lines.
 
@@ -104,7 +104,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- Kevin Powell's [Youtube](https://www.youtube.com/user/KepowOb) and Conquering Responsive Layouts[Course](https://courses.kevinpowell.co/conquering-responsive-layouts)- Pretty much any video Kevin has on responsive layouts and sass, I love it! In this project (after watching some of his videos) I tried not to use the <height> property and also not use absolute units for the <width> of components.
+- Kevin Powell's [Youtube](https://www.youtube.com/user/KepowOb) and Conquering Responsive Layouts [Course](https://courses.kevinpowell.co/conquering-responsive-layouts)- Pretty much any video Kevin has on responsive layouts and sass, I love it! In this project (after watching some of his videos) I tried not to use the **height** property and also not use absolute units for the **width** of components.
 - I absolutely love these [Sass Guidelines](https://sass-guidelin.es/) written by [Kitty Giraudel](https://kittygiraudel.com/), specially the section on [Architecture](https://sass-guidelin.es/#architecture). It inspired me to be more organized with my projects and create good habits.
 
 ## Author
