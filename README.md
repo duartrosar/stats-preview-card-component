@@ -109,5 +109,5 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Github - [Add your name here](https://github.com/duartrosar)
+- Github - [duartrosar](https://github.com/duartrosar)
 - Frontend Mentor - [@duartrosar](https://www.frontendmentor.io/profile/duartrosar)
