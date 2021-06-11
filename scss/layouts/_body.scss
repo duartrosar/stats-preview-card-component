@@ -1,9 +1,9 @@
 @use '../abstracts/abstracts' as *;
 
+// The container with the card init
+// Is always gonna be the size of whatever the body is
 .container {
-  //   position: relative;
   width: 100%;
-  // background-color: ;
 }
 
 .attribution {
@@ -11,7 +11,7 @@
   color: $primary-white;
   text-align: center;
   margin: 35px;
-  @include mq("large") {
+  @include mq("medium") {
     margin: 70px;
   }
   p {

@@ -2,16 +2,22 @@
 @use '../abstracts/mixins' as *;
 // @use '../abstracts/abstracts' as *;
 
+// All styles regarding text elements
+
+// General styles for headers and respective media queries
 h1 {
   font-size: 1.8rem;
   color: $primary-white;
   font-family: $primary-font;
   line-height: 1.2;
-  @include mq("medium") {
+  @include mq("small") {
     font-size: 2.3rem;
   }
-  @include mq("large") {
+  @include mq("medium") {
     font-size: 3.6rem;
+  }
+  @include mq("huge") {
+    font-size: 2rem;
   }
   .insights {
     color: $primary-light;
@@ -19,21 +25,39 @@ h1 {
   }
 }
 
+// General styles for paragrahs and respective media queries
 p {
   font-family: $secondary-font;
   font-size: 1rem;
-  @include mq("medium") {
+  @include mq("small") {
     font-size: 1.3rem;
   }
-  @include mq("large") {
+  @include mq("medium") {
     font-size: 2rem;
+  }
+  @include mq("huge") {
+    font-size: 1rem;
   }
 }
 
+// More specific styles for the different types of paragraphs
 .p {
   &-main {
     color: $secondary-white;
     line-height: 1.5;
+    // I really don't like this solution to obtain the right text formatting
+    // See mark up*
+    &-large {
+      display: none;
+      color: $secondary-white;
+      line-height: 1.5;
+      @include mq("huge") {
+        display: block;
+      }
+    }
+    @include mq("huge") {
+      display: none;
+    }
   }
   &-stats {
     color: $tertiary-white;

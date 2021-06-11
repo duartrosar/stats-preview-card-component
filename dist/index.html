@@ -8,12 +8,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
 
     <title>Frontend Mentor | Stats preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
   </head>
   <body>
     <div class="container">
@@ -23,37 +17,47 @@
             <div class="overlay"></div>
             <div class="img"></div>
           </div>
-
-          <div class="content-main">
-            <div class="head">
-              <h1>
-                Get <span class="insights">insights</span> that help your
-                business grow.
-              </h1>
+          <div class="content-text">
+            <div class="content-main">
+              <div class="head">
+                <h1>
+                  Get <span class="insights">insights</span> that help your
+                  business grow.
+                </h1>
+              </div>
+              <div class="body">
+                <!-- I could not find a way to get the same text formatting as the image without line breaks -->
+                <p class="p-main">
+                  Discover the benefits of data<br />
+                  analytics and make better decisions<br />
+                  regarding revenue customer<br />
+                  experience, and overall efficiency.
+                </p>
+                <!-- I'm sorry...-->
+                <p class="p-main-large">
+                  Discover the benefits of data analytics and make <br />better
+                  decisions regarding revenue customer<br />
+                  experience, and overall efficiency.
+                </p>
+              </div>
             </div>
-            <div class="body">
-              <p class="p-main">
-                Discover the benefits of data<br />
-                analytics and make better decisions<br />
-                regarding revenue customer<br />
-                experience, and overall efficiency.
-              </p>
+            <div class="content-stats">
+              <ul>
+                <li class="stat">
+                  <h1>10k+</h1>
+                  <p class="p-stats">companies</p>
+                </li>
+                <li class="stat">
+                  <h1>314</h1>
+                  <p class="p-stats">templates</p>
+                </li>
+                <li class="stat">
+                  <h1>12M+</h1>
+                  <p class="p-stats">queries</p>
+                </li>
+              </ul>
             </div>
           </div>
-          <ul class="content-stats">
-            <li class="stat">
-              <h1>10k+</h1>
-              <p class="p-stats">companies</p>
-            </li>
-            <li class="stat">
-              <h1>314</h1>
-              <p class="p-stats">templates</p>
-            </li>
-            <li class="stat">
-              <h1>12m+</h1>
-              <p class="p-stats">queries</p>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

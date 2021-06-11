@@ -36,6 +36,11 @@ h1 {
     font-size: 3.6rem;
   }
 }
+@media only screen and (min-width: 1224px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 h1 .insights {
   color: #aa5cdb;
   font-size: inherit;
@@ -55,10 +60,30 @@ p {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 1224px) {
+  p {
+    font-size: 1rem;
+  }
+}
 
 .p-main {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.5;
+}
+.p-main-large {
+  display: none;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+@media only screen and (min-width: 1224px) {
+  .p-main-large {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  .p-main {
+    display: none;
+  }
 }
 .p-stats {
   color: rgba(255, 255, 255, 0.6);
@@ -73,40 +98,109 @@ p {
   background-color: #1b1938;
   width: 85%;
 }
+@media only screen and (min-width: 1020px) {
+  .card {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .card {
+    margin: 13em auto 0 auto;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  .card .content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .card .content .img-container {
   position: relative;
 }
+@media only screen and (min-width: 1224px) {
+  .card .content .img-container {
+    width: 50%;
+  }
+}
 .card .content .img-container .img {
   background: url("../images/image-header-mobile.jpg") no-repeat top;
+  background-color: #774099;
+  background-blend-mode: overlay;
   background-size: 100% auto;
   padding-bottom: 70%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: #774099;
-  background-blend-mode: overlay;
 }
-.card .content-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 30px 20px;
-}
-@media only screen and (min-width: 768px) {
-  .card .content-main {
-    margin: 60px 50px;
+@media only screen and (min-width: 1224px) {
+  .card .content .img-container .img {
+    background: url("../images/image-header-desktop.jpg") no-repeat center cover/center;
+    background-color: #774099;
+    background-blend-mode: overlay;
+    background-size: 100% 100%;
+    padding-bottom: 80%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+    width: 100%;
   }
 }
-.card .content-main .body {
+@media only screen and (min-width: 1224px) {
+  .card .content-text {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .card .content-text {
+    padding: 5px;
+  }
+}
+.card .content-text .content-main {
+  width: 90%;
+  text-align: center;
+  margin: 30px auto;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 1224px) {
+  .card .content-text .content-main {
+    width: 80%;
+    margin: 40px auto 0 auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .card .content-text .content-main {
+    width: 80%;
+    margin: 50px auto 0 auto;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  .card .content-text .content-main .head {
+    text-align: start;
+  }
+}
+.card .content-text .content-main .body {
   margin-top: 20px;
 }
 @media only screen and (min-width: 768px) {
-  .card .content-main .body {
+  .card .content-text .content-main .body {
     margin-top: 40px;
   }
 }
-.card .content-stats {
+@media only screen and (min-width: 1224px) {
+  .card .content-text .content-main .body {
+    text-align: start;
+    margin-top: 20px;
+  }
+}
+.card .content-text .content-stats {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+@media only screen and (min-width: 1020px) {
+  .card .content-text .content-stats {
+    width: 80%;
+  }
+}
+.card .content-text .content-stats ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,16 +209,41 @@ p {
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
-  .card .content-stats {
+  .card .content-text .content-stats ul {
     margin-bottom: 80px;
   }
 }
-.card .content-stats .stat {
+@media only screen and (min-width: 1224px) {
+  .card .content-text .content-stats ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .card .content-text .content-stats ul {
+    margin-top: 80px;
+  }
+}
+.card .content-text .content-stats ul .stat {
   margin: 20px;
 }
 @media only screen and (min-width: 768px) {
-  .card .content-stats .stat {
+  .card .content-text .content-stats ul .stat {
     margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  .card .content-text .content-stats ul .stat {
+    text-align: left;
+    margin: 0 60px 0 0;
+  }
+  .card .content-text .content-stats ul .stat h1 {
+    font-size: 1.5rem;
+  }
+  .card .content-text .content-stats ul .stat p {
+    font-size: 0.8rem;
   }
 }
 

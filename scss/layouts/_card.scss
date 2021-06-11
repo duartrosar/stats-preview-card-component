@@ -1,56 +1,137 @@
 @use '../abstracts/abstracts' as *;
 
+// The whole card
 .card {
   margin: 5em auto 0 auto;
   border: 1px solid $primary-dark;
   border-radius: 10px;
   background-color: $secondary-dark;
   width: 85%;
+  @include mq("large") {
+    width: 75%;
+  }
+  @include mq("large") {
+    margin: 13em auto 0 auto;
+  }
+  // The container with the text and picture
   .content {
+    @include mq("huge") {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    // The image container
     .img-container {
       position: relative;
+      @include mq("huge") {
+        width: 50%;
+      }
+      // The div with the bg image
       .img {
-        background: url("../images/image-header-mobile.jpg") no-repeat top;
+        background: $mobile-image;
+        background-color: mix($primary-light, black, 70%);
+        background-blend-mode: overlay;
         background-size: 100% auto;
         padding-bottom: 70%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        background-color: mix($primary-light, black, 70%);
-        background-blend-mode: overlay;
-      }
-    }
-    &-main {
-      //   background-color: red;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin: 30px 20px;
-      @include mq("large") {
-        margin: 60px 50px;
-      }
-      .body {
-        margin-top: 20px;
-        @include mq("large") {
-          margin-top: 40px;
+        // I don't understand why the background color and the blend mode got overwritten in the media query...
+        @include mq("huge") {
+          background: $desktop-image;
+          background-color: mix($primary-light, black, 70%);
+          background-blend-mode: overlay;
+          background-size: 100% 100%;
+          padding-bottom: 80%;
+          border-top-left-radius: 0;
+          border-top-right-radius: 10px;
+          width: 100%;
         }
       }
     }
-    &-stats {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 20px;
-      @include mq("large") {
-        margin-bottom: 80px;
+    // The div with all the text content
+    &-text {
+      @include mq("huge") {
+        width: 50%;
       }
-      .stat {
-        margin: 20px;
+      @include mq("full") {
+        padding: 5px;
+      }
+      // Contains the title and the main paragraph
+      .content-main {
+        width: 90%;
+        text-align: center;
+        margin: 30px auto;
+        margin-bottom: 0;
+
+        @include mq("huge") {
+          width: 80%;
+          margin: 40px auto 0 auto;
+        }
+        @include mq("full") {
+          width: 80%;
+          margin: 50px auto 0 auto;
+        }
+        // Title
+        .head {
+          @include mq("huge") {
+            text-align: start;
+          }
+        }
+        // Paragraph
+        .body {
+          margin-top: 20px;
+          @include mq("medium") {
+            margin-top: 40px;
+          }
+          @include mq("huge") {
+            text-align: start;
+            margin-top: 20px;
+          }
+        }
+      }
+      // Contains the stats headings and paragraphs
+      .content-stats {
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
         @include mq("large") {
-          margin-top: 60px;
+          width: 80%;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin-bottom: 20px;
+          @include mq("medium") {
+            margin-bottom: 80px;
+          }
+          @include mq("huge") {
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-top: 60px;
+            margin-bottom: 40px;
+          }
+          @include mq("full") {
+            margin-top: 80px;
+          }
+          // Each stat item
+          .stat {
+            margin: 20px;
+            @include mq("medium") {
+              margin-top: 60px;
+            }
+            @include mq("huge") {
+              text-align: left;
+              margin: 0 60px 0 0;
+              h1 {
+                font-size: 1.5rem;
+              }
+              p {
+                font-size: 0.8rem;
+              }
+            }
+          }
         }
       }
     }

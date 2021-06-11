@@ -8,10 +8,12 @@ $secondary-font: "Lexend Deca", sans-serif;
 
 // Media Queries Breakpoints
 $breakpoints: (
-  small: 320px,
-  medium: 480px,
-  large: 768px,
-  huge: 1024px,
+  tiny: 324px,
+  small: 480px,
+  medium: 768px,
+  large: 1020px,
+  huge: 1224px,
+  full: 1440px,
 );
 
 // Colors
@@ -24,5 +26,6 @@ $secondary-white: hsla(0, 0%, 100%, 0.75);
 $tertiary-white: hsla(0, 0%, 100%, 0.6);
 
 // Images
-// $mobile-image: ;
-// $desktop-image: ;
+$mobile-image: url("../images/image-header-mobile.jpg") no-repeat top;
+$desktop-image: url("../images/image-header-desktop.jpg") no-repeat center
+  cover/center;
