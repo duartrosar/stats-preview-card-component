@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts/abstracts' as *;
 
 .container {
   //   position: relative;
@@ -11,6 +11,9 @@
   color: $primary-white;
   text-align: center;
   margin: 35px;
+  @include mq("large") {
+    margin: 70px;
+  }
   p {
     margin: 6px;
   }
