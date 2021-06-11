@@ -8,12 +8,16 @@
 }
 
 body {
-  background-color: #090b1a;
   line-height: 1;
+  background-color: #090b1a;
 }
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 h1 {
@@ -31,6 +35,11 @@ p {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
 }
+@media only screen and (min-width: 480px) {
+  p {
+    font-size: 1.5em;
+  }
+}
 
 .p-main {
   color: rgba(255, 255, 255, 0.75);
@@ -38,33 +47,26 @@ p {
 }
 .p-stats {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.p-main {
-  color: rgba(255, 255, 255, 0.75);
-}
-.p-stats {
-  color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
+  margin-top: 8px;
 }
 
 .card {
-  margin: 50px auto;
+  margin: 5em auto 0 auto;
   border: 1px solid #090b1a;
   border-radius: 10px;
   background-color: #1b1938;
-  width: 320px;
-  height: 800px;
+  width: 85%;
 }
 .card .content .img-container {
   position: relative;
 }
 .card .content .img-container .img {
-  background: url("../images/image-header-mobile.jpg") no-repeat center;
-  background-size: 335px 235px;
+  background: url("../images/image-header-mobile.jpg") no-repeat top;
+  background-size: 100% auto;
+  padding-bottom: 70%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 233px;
   background-color: #774099;
   background-blend-mode: overlay;
 }
@@ -85,15 +87,27 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 20px;
 }
 .card .content-stats .stat {
   margin: 20px;
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
-  background-color: #090b1a;
+  width: 100%;
+}
+
+.attribution {
+  font-style: "Inter", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 35px;
+}
+.attribution p {
+  margin: 6px;
+}
+.attribution a {
+  color: #3e52a3;
 }
 
 /*# sourceMappingURL=style.css.map */
