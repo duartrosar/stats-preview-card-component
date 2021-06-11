@@ -26,11 +26,11 @@ Users should be able to:
 ### Screenshot
 
 ![Mobile](./screenshots/screenshot_mobile.png)
-![Desktop](./screenshots/screenshot_mobile.png)
+![Desktop](./screenshots/screenshot_desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/duartrosar/stats-preview-card-component)
 - Live Site URL: [Add live site URL here](https://epic-jones-285c87.netlify.app/)
 
 ## My process
@@ -40,29 +40,63 @@ Users should be able to:
 - Semantic HTML5 markup
 - Flexbox
 - Mobile-first workflow
-- [Sass] (https://sass-lang.com/) - node-sass
+- [Sass](https://sass-lang.com/) - Node Sass
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This was my first <mobile-first> and "fully" responsive project. I tried not to use absolute units and not to repeat code. I also tried to divide my project into as many smaller sections as possible, it was little bit confusing at first navigating the project folders, but thanks to Sass and VSCode, I quickly got used to it. I struggled specially with sizing the image and "making it grow" with the layout, I'm still not very happy with how I achieved it.
 
-To see how you can add code snippets, see below:
+The only thing I'm really proud of is not using the <height> property, as this is something I've struggled with before, and, as I've mentioned before not using absolute units to size components.
+
+The following is something I'm NOT proud of. I could not figure out how to format the text like in the brief prictures, in order for it to have the same amount of lines.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="body">
+  <!-- I could not find a way to get the same text formatting as the image without line breaks -->
+  <p class="p-main">
+    Discover the benefits of data<br />
+    analytics and make better decisions<br />
+    regarding revenue customer<br />
+    experience, and overall efficiency.
+  </p>
+  <!-- I'm sorry...-->
+  <p class="p-main-large">
+    Discover the benefits of data analytics and make <br />better decisions
+    regarding revenue customer<br />
+    experience, and overall efficiency.
+  </p>
+</div>
 ```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```scss
+.p {
+  &-main {
+    color: $secondary-white;
+    line-height: 1.5;
+    // I really don't like this solution to obtain the right text formatting
+    // See mark up*
+    &-large {
+      display: none;
+      color: $secondary-white;
+      line-height: 1.5;
+      // "Swap" the paragraphs depending on screen size
+      @include mq("huge") {
+        display: block;
+      }
+    }
+    @include mq("huge") {
+      display: none;
+    }
+  }
+  &-stats {
+    color: $tertiary-white;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
@@ -70,12 +104,10 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- Kevin Powell's [Youtube](https://www.youtube.com/user/KepowOb) and Conquering Responsive Layouts[Course](https://courses.kevinpowell.co/conquering-responsive-layouts)- Pretty much any video Kevin has on responsive layouts and sass, I love it! In this project (after watching some of his videos) I tried not to use the <height> property and also not use absolute units for the <width> of components.
+- I absolutely love these [Sass Guidelines](https://sass-guidelin.es/) written by [Kitty Giraudel](https://kittygiraudel.com/), specially the section on [Architecture](https://sass-guidelin.es/#architecture). It inspired me to be more organized with my projects and create good habits.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Github - [Add your name here](https://github.com/duartrosar)
 - Frontend Mentor - [@duartrosar](https://www.frontendmentor.io/profile/duartrosar)
