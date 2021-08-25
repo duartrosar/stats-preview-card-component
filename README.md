@@ -39,8 +39,6 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [Sass](https://sass-lang.com/) - Node Sass
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 
 ### What I learned
 
